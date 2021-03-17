@@ -56,6 +56,9 @@ Here are some of the items that you should take care of
 * Write Swagger documentation with clear description, request, response & example for the endpoints
 * Optional Bonus: Write API Flows for unit testing the API using any assertion library such as "SuperTest"
 
+### BONUS ROUND
+
+Replace the rest endpoint with GraphQL using apollo! 
 
 ## Criteria
 
