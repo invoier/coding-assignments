@@ -16,11 +16,28 @@ You are required to build a fullstack single page application built with
 
 ## Frontend Requirements
 
+### Inputs 
+1) Input field 1  - Search for invoices with a given Invoice Owner
+2) Dropdown that should be able to filter status a list of invoice
+3) Input field 2 - Find a speficic invoice with a given invoiceId 
+   
+When the user doesn't have any input or clears the input, the input fields should be shown in the middle of the page
+
+When the user starts typing into the Input field 1, make an Backend API call to fetch the results and display them in the form of something that is a not a table. The data should be cached.
+
+Here are some of the items that you should take care of
+
+* Add debounce (feel free to import from lodash). Make the API calls only if the user has typed 3 or more characters.
+* If the user changes the "Filter" value in the dropdown and user has 3 or more characters in the input already, it should refresh the results.
+* If the user clears the input or types less than three characters, clear the results and show the empty screen.
+
+Consider all the states: initial, loading, error,... and inform the user about it.
 
 ## Backend Requirements
 
 Write an backend API endpoint which stores and handles invoice data. The invoices contains: 
 
+InvoiceId
 InvoiceStatus 
 InvoiceValue
 InvoiceExpireDate
@@ -28,7 +45,7 @@ InvoiceOwner
 InvoiceReceiver
 
 Create two API Endpoints:
-1.  "/api/invoices"
+1.  "/api/search/invoices"
     - Gets all invoices for the specific account
 2.  "/api/invoices/{invoiceId}" : 
     - Get a specific invoice id 
