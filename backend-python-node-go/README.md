@@ -79,7 +79,8 @@ Your work will be evaluated primarily on:
 * Use following [coding style guide](https://github.com/airbnb/javascript) for javascript 
 * Correct use of promises, including proper error handling. async/await may be used
 * Typescript definitions, types, interfaces if using Typescript
-* Efficient DynamoDB queries and indexes
+* Efficient DynamoDB queries and indexes ( Single Table Design )
+* Python typing.
 * Unit tests for API endpoints and also do functional testing
 * API documentation using [Swagger](https://swagger.io/)
 
