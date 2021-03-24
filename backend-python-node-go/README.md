@@ -69,8 +69,20 @@ Write functional and API test using using PyTest
 
 ## Hosting details
 
-You will need to make your API available on a server that we can communicate with. You can make use of the following services:
+You will need to make your API available on a server that we can communicate with. You can make use of the following services: 
 * [AWS](https://aws.amazon.com/)
+
+The services selected should all be covered by the free-tier of AWS, let us know if this is not accurate anymore.
+
+## Deployment details
+
+Write cloudformation template using 
+
+`AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31`
+
+deployment should be triggered by [serverless-application-model](https://docs.aws.amazon.com/serverless-application-model/index.html) 
+by building either a .zip deployment or docker deployment.
 
 ## Criteria
 
