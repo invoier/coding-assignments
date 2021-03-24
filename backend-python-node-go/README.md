@@ -63,6 +63,10 @@ Include an `at` property in the same format indicating the actual time of the sn
 
 If no suitable data is available a 404 status code should be given.
 
+### BONUS ROUND
+
+Replace the rest endpoint with GraphQL using apollo!
+
 ## Unit tests
 
 Write functional and API test using using PyTest
